@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  font-family: sans-serif;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table td {
+  padding: 0rem;
+  border: 3px solid black;
+  border-top: none !important;
+}
+table tr:first-child td {
+  border-top: none;
+}
+table tr td:first-child {
+  border-left: none;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+table tr td:last-child {
+  border-right: none;
+}
+
+button {
+  cursor: pointer; /* Visually show that you can interact with the button */
+  color: #333;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+}
