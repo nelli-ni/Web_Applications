@@ -97,11 +97,9 @@ function App() {
     </div>
   );
 }
-function pick() {
-  alert("Good shoot!");
-}
-const motion = <button onClick={pick} />;
-
+const myComponent = function() {
+  return <div />;
+};
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 // ReactDOM.render(motion, document.getElementById('root'));
