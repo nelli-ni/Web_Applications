@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function App() {
+const Grid = () => {
   return (
     <div id="board">
       <h1 align="center">Tic Tac Toe</h1>
@@ -96,10 +96,25 @@ function App() {
       </table>
     </div>
   );
-}
-const myComponent = function() {
-  return <div />;
 };
+
+const button_p = () => {
+  return (
+    <button id="cell00" onclick="myFunction()">
+      Click me
+    </button>
+  );
+};
+
+const myFunction = () => {
+  document.getElementById("cell00").style.color = "red";
+  return (
+    <div>
+      <button_p />
+    </div>
+  );
+};
+
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Grid />, rootElement);
 // ReactDOM.render(motion, document.getElementById('root'));
