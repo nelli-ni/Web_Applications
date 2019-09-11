@@ -3,14 +3,19 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function App() {
+function Grid() {
   return (
     <div id="board">
       <h1 align="center">Tic Tac Toe</h1>
       <table>
         <tr>
           <td>
-            <button type="button" class="cell" id="cell00" />
+            <button
+              type="button"
+              onClick={myFunction}
+              className="cell"
+              id="cell00"
+            />
           </td>
           <td>
             <button type="button" class="cell" id="cell01" />
@@ -97,9 +102,10 @@ function App() {
     </div>
   );
 }
-const myComponent = function() {
-  return <div />;
-};
+
+function myFunction() {
+  document.getElementById("cell00").innerHTML = "X";
+}
+
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-// ReactDOM.render(motion, document.getElementById('root'));
+ReactDOM.render(<Grid />, rootElement);
